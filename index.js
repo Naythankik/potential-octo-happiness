@@ -6,6 +6,8 @@ const jobListings = async () => {
 
   jobs.forEach((element) => {
     const article = document.createElement("article");
+    console.log(element.featured);
+    element.featured ? article.setAttribute("class", "border-left") : "";
     const langContainer = document.createElement("div");
     langContainer.setAttribute("class", "article-right-side");
     const role = document.createElement("span");
